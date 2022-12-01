@@ -1,0 +1,183 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.title {
+    font-family: verdana;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: white;
+}
+
+.textcenter {
+    color: rgb(147, 17, 147);
+    font-family: verdana;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 50px;
+    border: 3px solid rgb(147, 17, 147);
+    border-radius: 10px;
+}
+
+table {
+    padding: 30px;
+}
+
+p {
+    line-height: 50px;
+}
+
+p:hover {
+    line-height: 35px;
+    transition: 0.5s;
+}
+
+td:hover {
+    transform: scale(80%);
+    overflow-x: hidden;
+    background-color: rgba(86, 16, 86, 0.491);
+    transition: 1s;
+    color: white;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 3px solid #fff700b9;
+}
+
+/* CSS Beasiswa */
+.jumbotronbeasiswa {
+    background-image: url(../assets/beasiswa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+/* CSS Tentang Kami */
+.jumbotrontentangkami {
+    background-image: url(../Assets/tentang_kami.png);
+    height: 600px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS NAVBAR */
+.header {
+    overflow: hidden;
+    background-color: rgb(147, 17, 147);
+    padding: 20px 10px;
+    position: fixed;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #fff700b9;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .beasiswasemua{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1,1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .tentangkamisemua{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1,1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .header{
+        position: static;
+        width: 100%;
+    }
+    
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    .title {
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 641px) and (max-width:1007px) {
+    .beasiswasemua{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1,1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .tentangkamisemua{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1,1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .header{
+        position: static;
+        width: 100%;
+    }
+    
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    .title {
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
